@@ -1,6 +1,7 @@
 # Signal Panner UI Component
-[![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/FILE_EXCHANGE_ID)
 [![Open in MATLAB&reg; Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://github.com/mathworks/signal-panner)
+[![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/184818)
+
 
 <img src="signalpanner_icon.png" alt="Signal Panner icon" width="190">
 
