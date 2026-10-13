@@ -1,5 +1,5 @@
 # Signal Panner UI Component
-[![Open in MATLAB&reg; Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://github.com/mathworks/signal-panner)
+[![Open in MATLAB&reg; Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=mathworks/signal-panner)
 [![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/184818)
 
 
@@ -46,6 +46,39 @@ zoom.
 
 ## Setup
 
+Choose the file format for your MATLAB release:
+
+| MATLAB release | Files to use |
+| --- | --- |
+| R2026b or newer | The text versions in [`R2026b/`](R2026b/README.md). |
+| R2026a | The original `.mlapp` files in this folder. |
+
+`R2026b/SignalPanner.m` is a code-only component class for editing in the
+MATLAB Editor. The original `SignalPanner.mlapp` remains the visual component
+design source. The text demo consists of `SignalPanner_demo.m` and its
+companion `.xml` file; keep both files together for running and App Designer
+editing.
+
+Choose one version per MATLAB session. Restart MATLAB when switching
+versions, and avoid recursively adding this repository with `genpath`.
+MATLAB's Current Folder takes precedence over other folders on the path.
+
+### R2026b Text Versions
+
+Set the `R2026b` folder as MATLAB's Current Folder and run:
+
+```matlab
+cd("path/to/signal-panner/R2026b")
+addpath(pwd)
+SignalPanner_demo
+```
+
+The folder includes the event-data helper and component metadata. Restart
+App Designer to refresh its Component Library, then locate **SignalPanner**
+under **My Components**. See the [R2026b guide](R2026b/README.md).
+
+### Original App Designer Files
+
 1. Download or clone this repository.
 2. Add the repository folder to the MATLAB path:
 
@@ -63,7 +96,8 @@ zoom.
 
 ### MathWorks Products
 
-Requires MATLAB R2026a or newer:
+The original `.mlapp` versions require MATLAB R2026a or newer; the text
+versions in `R2026b/` require MATLAB R2026b or newer:
 
 - [MATLAB](https://www.mathworks.com/products/matlab.html)
 
@@ -78,12 +112,16 @@ for supported operating systems.
 
 ### Run the Demo
 
-Open `SignalPanner_demo.mlapp` in App Designer and click **Run**, or launch it
-from the MATLAB Command Window:
+After selecting a version above, launch the demo from the MATLAB Command
+Window:
 
 ```matlab
 SignalPanner_demo
 ```
+
+For visual editing, open the original `SignalPanner_demo.mlapp` or the
+R2026b demo's `.m` file in App Designer. The text demo also needs its companion
+XML file when launched from the Command Window.
 
 The demo displays two signals and keeps the main signal axes synchronized with
 the panner. It also provides controls to zoom in, zoom out, and restore the
