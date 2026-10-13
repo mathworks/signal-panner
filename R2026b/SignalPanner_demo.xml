@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<MATLABApp schemaVersion='1.0.0' release='R2026b.0' minRelease='R2026b'>
+    <UIFigure name='SignalPannerDemoUIFigure'>
+        <Name>'Signal Panner Demo'</Name>
+        <Position>[100 100 960 600]</Position>
+        <Children>
+            <UIAxes name='UIAxes'>
+                <Box>'on'</Box>
+                <Position>[21 157 918 382]</Position>
+                <Title>
+                    <String>'Signals'</String>
+                </Title>
+                <XGrid>'on'</XGrid>
+                <XLabel>
+                    <String>'Time (s)'</String>
+                </XLabel>
+                <YGrid>'on'</YGrid>
+                <YLabel>
+                    <String>'Amplitude'</String>
+                </YLabel>
+            </UIAxes>
+            <SignalPanner name='SignalPanner'>
+                <Position>[21 43 918 92]</Position>
+                <ViewChangedFcn>'SignalPannerViewChanged'</ViewChangedFcn>
+                <ViewChangingFcn>'SignalPannerViewChanging'</ViewChangingFcn>
+                <ViewLimits>[0 1]</ViewLimits>
+            </SignalPanner>
+            <Button name='ZoomOutButton'>
+                <ButtonPushedFcn>ZoomOutButtonPushed</ButtonPushedFcn>
+                <Position>[520 558 82 24]</Position>
+                <Text>'Zoom Out'</Text>
+            </Button>
+            <Button name='ZoomInButton'>
+                <ButtonPushedFcn>ZoomInButtonPushed</ButtonPushedFcn>
+                <Position>[610 558 76 24]</Position>
+                <Text>'Zoom In'</Text>
+            </Button>
+            <Button name='FullViewButton'>
+                <ButtonPushedFcn>FullViewButtonPushed</ButtonPushedFcn>
+                <Position>[694 558 78 24]</Position>
+                <Text>'Full View'</Text>
+            </Button>
+            <Label name='TitleLabel'>
+                <FontSize>14</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[21 559 205 22]</Position>
+                <Text>'Signal Panner Demo'</Text>
+            </Label>
+            <Label name='StatusLabel'>
+                <FontColor>[0.349 0.349 0.349]</FontColor>
+                <HorizontalAlignment>'right'</HorizontalAlignment>
+                <Position>[238 559 270 22]</Position>
+                <Text>''</Text>
+            </Label>
+            <Label name='HelpLabel'>
+                <FontColor>[0.349 0.349 0.349]</FontColor>
+                <Position>[784 559 155 22]</Position>
+                <Text>'Drag | resize edges | wheel'</Text>
+            </Label>
+        </Children>
+    </UIFigure>
+    <RunConfiguration>
+        <StartupFcn>startupFcn</StartupFcn>
+    </RunConfiguration>
+    <AppDetails>
+        <Name>app1</Name>
+        <Version>1.0</Version>
+    </AppDetails>
+    <InternalData>
+        <AppId>2a60b4c9-f746-427a-b61d-f7526e4971d5</AppId>
+    </InternalData>
+    <!-- Thumbnail is used by file previewers. To change how the thumbnail is captured or stored, use the App Details dialog box in App Designer. -->
+    <Thumbnail autoCapture='true'></Thumbnail>
+</MATLABApp>
